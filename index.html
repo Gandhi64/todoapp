@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+           
+        #container{
+            text-align: center;
+            align-items: center;
+            border-radius: 30px;
+            border: none;
+            font-family: Arial, Helvetica, sans-serif;
+
+            background-color: yellow;
+            width: 300px;
+            border: 1px solid black;
+            padding: 10px;
+            margin-left: 550px;
+            box-shadow: 10px 10px 8px #888888; 
+            overflow: auto;
+
+         }
+         
+         #myInput{
+            border-radius: 100px;
+            width: 200px;
+            box-shadow: 10px 10px 8px #888888;
+            border: none;
+            height: 25px;
+         }
+         button{
+            color: aliceblue;
+            background-color: black;
+            box-shadow: 10px 10px 8px #888888;
+            border-radius: 5px;
+         }
+        
+         
+        
+        #myList{
+           
+            float: left;
+            text-align: left;
+            
+        }
+       .list_container
+       {
+        background-color: aliceblue;
+        border-radius: 7px;
+        box-shadow: 10px 10px 8px #888888;
+       }
+       button:hover{
+        background-color: blueviolet;
+       }
+       @media screen and (max-width:768px){
+        
+        #container{
+         margin-left: 25px;
+        flex-direction: column;}
+
+       }
+    </style>
+</head>
+<body>
+    <section id="container">
+    <h1>To-Do App</h1>
+    
+        <div class="form_container">
+    <form id="myForm">
+        <input id="myInput" type="text" placeholder="add item" autocomplete="off">
+        <div class="buttonfield"> <button >Add New Item</button></div> 
+    </form>
+        </div>
+    <br>
+<div class="list_container">
+    <ul id="myList">
+       
+         
+    </ul>
+    </div>
+</section>
+    <script src="javascript.js">
+        
+    </script>
+</body>
+</html>
